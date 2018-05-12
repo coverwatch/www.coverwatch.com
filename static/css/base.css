@@ -1,0 +1,87 @@
+body {
+  background: url(../images/bg.png) center center fixed no-repeat;
+  height: 100%;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+div.nav-wrapper > a {
+  height: 64px;
+  display: block;
+  margin-left: 10px;
+}
+
+.full-height {
+  min-height: (100vh - 84px);
+  height: calc(100vh - 84px);
+}
+
+@media only screen and (max-width: 991px) {
+  .full-height {
+    min-height: 100vh;
+    height: 100vh;
+  }
+}
+
+div.dead-center {
+  margin-top: 33%;
+}
+
+.excerpt {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.horizontal-spacer {
+  min-height: 100%;
+  display: flex;
+  height: 100%;
+  border-right: solid 1px #fff;
+  position: relative;
+}
+
+.bottom-right {
+  font-size: 48px;
+  position: absolute;
+  bottom: -14px;
+  right: 10px;
+}
+
+.fa-linkedin {
+  color: #fff;
+}
+
+form {
+  margin-top: 18%;
+  width: 370px;
+  height: 566px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(17, 38, 92, 0.5);
+}
+
+button, input, optgroup, select, textarea {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+input {
+  height: 2rem !important;
+}
+
+textarea#inquiry {
+  height: 110px;
+}
+
+div#form-area {
+  padding: 20px;
+}

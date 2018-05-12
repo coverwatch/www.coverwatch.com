@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coverwatch</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/base.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('select').formSelect();
+      $('textarea#inquiry').characterCounter();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <nav id="navigation">
+      <div class="nav-wrapper">
+        <a href="/" title="Coverwatch"><img src="/static/images/logo.png" alt="Coverwatch"></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="col hide-on-med-and-down m3 full-height">
+      <div class="horizontal-spacer">
+        <div class="bottom-right">
+          <a href="https://www.linkedin.com/company/coverwatch"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m6 full-height">
+      <div class="dead-center">
+        <h1>The Network Everyone Deserves</h1>
+        <p class="excerpt">Coverwatch provides an end-to-end standardized infrastructure solution for the Insurance &amp; Assurance industry, optimized through machine learning and blockchain technologies.</p>
+        <p class="excerpt">Coverwatch is always interested in engaging the stakeholders within the Insurance &amp; Assurance Industry. Are you a Healthcare Provider, Insurer, Reinsurer, Retrocession, Risk Adjuster etc? Learn more about us by listing your details below</p>
+      </div>
+    </div>
+
+    <div class="col m3 full-height">
+      <form action="https://formspree.io/reza@coverwatch.com" method="POST">
+        <div id="form-area">
+          <p>
+            <label for="company_type">Company Type</label>
+            <select id="id_company_type" name="company_type">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="insurance">Insurance Company</option>
+              <option value="healthcare">Healthcare Provider</option>
+              <option value="reinsurance">Reinsurance</option>
+              <option value="other">Others</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="full_name">Name</label>
+            <input type="text" name="full_name" class="validate">
+          </p>
+
+          <p>
+            <label for="_replyto">Email</label>
+            <input type="email" name="_replyto" class="validate">
+          </p>
+
+          <p>
+            <label for="phone">phone</label>
+            <input type="text" name="phone" class="validate">
+          </p>
+
+          <p>
+            <label for="inquiry">Inquiry</label>
+            <textarea id="inquiry" name="inquiry" class="materialize-textarea" data-length="120"></textarea>
+          </p>
+
+          <p class="center-align">
+            <button id="submit-btn" class="btn waves-effect blue darken-3" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
