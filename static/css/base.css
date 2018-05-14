@@ -18,12 +18,12 @@ h1 {
 div.nav-wrapper > a {
   height: 64px;
   display: block;
-  margin-left: 10px;
+  margin: 20px 30px;
 }
 
 .full-height {
-  min-height: (100vh - 84px);
-  height: calc(100vh - 84px);
+  min-height: (100vh - 150px);
+  height: calc(100vh - 150px);
 }
 
 @media only screen and (max-width: 991px) {
@@ -79,9 +79,15 @@ input {
 }
 
 textarea#inquiry {
-  height: 110px;
+  height: 80px;
 }
 
 div#form-area {
-  padding: 20px;
+  padding: 10px 20px;
+}
+
+.form-header {
+  color: #9e9e9e;
+  font-size: 0.9em;
+  margin-top: 0;
 }
